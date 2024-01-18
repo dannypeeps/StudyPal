@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/studyPlannerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Study Planner"
+        android:textSize="24sp"
+        android:layout_below="@id/logoutButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/mathStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Math Start Time"
+        android:layout_below="@id/studyPlannerTitle"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/mathEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Math End Time"
+        android:layout_below="@id/mathStart"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/scienceStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Science Start Time"
+        android:layout_below="@id/mathEnd"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/scienceEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Science End Time"
+        android:layout_below="@id/scienceStart"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/historyStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="History Start Time"
+        android:layout_below="@id/scienceEnd"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/historyEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="History End Time"
+        android:layout_below="@id/historyStart"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/notes1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Additional Notes 1"
+        android:layout_below="@id/historyEnd"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/notes2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Additional Notes 2"
+        android:layout_below="@id/notes1"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@id/notes2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp" />
+</RelativeLayout>

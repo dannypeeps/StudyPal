@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyFirstApplication"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.MyFirstApplication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".HomePageActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home_page"
+            android:theme="@style/Theme.MyFirstApplication" />
+
+        <activity
+            android:name=".StudyTimerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_study_timer"
+            android:theme="@style/Theme.MyFirstApplication" />
+
+        <activity
+            android:name=".StudyPlannerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_study_planner"
+            android:theme="@style/Theme.MyFirstApplication" />
+
+        <activity
+            android:name=".ProgressTrackerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_progress_tracker"
+            android:theme="@style/Theme.MyFirstApplication" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyFirstApplication" />
+    </application>
+
+</manifest>
